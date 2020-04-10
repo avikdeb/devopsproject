@@ -17,15 +17,13 @@ Use the following commands:
 4. If we want to set JAVA_HOME globally, append the file: sudo vi /etc/environment  and source it as: source /etc/environment - **Global system scope**
 5. Set for all users: do the same in /etc/profile file and source the same - **Global user scope**
 6. It we want to set JAVA_HOME as user level variable and to be seen in bash, create and append the file: .bash_profile (or straight in .bashrc) - **This is bash specific**
-<br>
-**Do either point 4 or 5 or 6**
-<br>
-7. Install zip and unzip utlities, if not present
-8. Run: curl -s get.sdkman.io | bash
-9. Run: source "$HOME/.sdkman/bin/sdkman-init.sh"
-10. Run: sdk install groovy
-11. Check the installation with command: groovy --version and also run groovysh to get the groovy shell
-12. Installation is complete
+7. Do either point **4 or 5 or 6**
+8. Install zip and unzip utlities, if not present
+9. Run: curl -s get.sdkman.io | bash
+10. Run: source "$HOME/.sdkman/bin/sdkman-init.sh"
+11. Run: sdk install groovy
+12. Check the installation with command: groovy --version and also run groovysh to get the groovy shell
+13. Installation is complete
 
 <br>
 
