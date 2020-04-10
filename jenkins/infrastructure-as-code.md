@@ -17,12 +17,12 @@ Check-out a sample jenkins file present in the cicddemo repository or in the dem
 8. Execute the pipeline. Note that this time, Jenkins gets the file from Git SCM and does what is instructed there
 <br>
 ## Sample jenkinsfile
-code(
+'
 node('/node-name/') 
 {
   stage('checkout'
   {
   
   }
-}
-)
+}'
+
