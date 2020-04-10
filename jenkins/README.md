@@ -1,4 +1,4 @@
-# Jenkins Notes
+# Jenkins Installation Notes
 
 ## Prerequisites
 
@@ -35,5 +35,13 @@ Use the following commands:
 8. Run: source ~/.bash_profile
 9. Check with: mvn -version
 
-### 5. Install Apache Tomcat and configure for deployment
-Use the following commands:
+<br>
+
+## Install Jenkins
+Follow the below steps once prerequisites are met.
+1. Run: sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+2. Run: sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+3. Run: sudo yum -y install jenkins
+4. To run jenkins as a service, run: sudo service jenkins start
+5. To auto-restart of the service upon machine booting, run: sudo chkconfig jenkins on
+6. To verify the auto-restart of the service upon machine booting, run: sudo chkconfig --list
