@@ -48,5 +48,6 @@ Download Link: https://atom.io/
 2. Start writing your codes - save files with .groovy extension
 
 <br>
-## 5.Sample codes
+
+## 5. Sample codes
 Groovy sample codes can be found in the repositoty - https://github.com/avikdeb/mygroovy
