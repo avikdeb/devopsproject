@@ -6,6 +6,7 @@ Usually we have a sequence of tasks to run when we build a software packege. In 
 <br>
 Check-out a sample jenkins file present in the cicddemo repository or in the demowebapp repository in this account.
 <br>
+
 ## Steps to create a jenkinsfile
 1. Craete a pipeline project in Jenkins e.g. demopipeline
 2. Pipeline script editor opens in Jenkins. Select the **Pipeline Script** option in the drop down. we need this to write or modify the script
@@ -16,13 +17,7 @@ Check-out a sample jenkins file present in the cicddemo repository or in the dem
 7. Now, open the Pipeline configuration again in Jenkins. This time, select the option to **SCM** (change it from **Pipeline  Script** option and provide the repository and branch details where the jenkinsfile is present (containing your build pipeline written as code)
 8. Execute the pipeline. Note that this time, Jenkins gets the file from Git SCM and does what is instructed there
 <br>
+
 ## Sample jenkinsfile
-'
-node('/node-name/') 
-{
-  stage('checkout'
-  {
-  
-  }
-}'
+
 
