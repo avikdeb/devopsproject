@@ -45,3 +45,13 @@ Follow the below steps once prerequisites are met.
 4. To run jenkins as a service, run: sudo service jenkins start
 5. To auto-restart of the service upon machine booting, run: sudo chkconfig jenkins on
 6. To verify the auto-restart of the service upon machine booting, run: sudo chkconfig --list
+
+<br>
+
+## Post-Install Tasks
+1. Once installation completes, Jenkins will prompt for one-time admin password to unlock product. Copy the path given in the
+wizard and just paste in to your browser, right after the Jenkins URL. Alternatively, remote login to the box and run: sudo cat /path-to-key/
+2. Proceed as usual and install suggested plug-ins. Few plug-ins may fail, don't worry - just continue as-is. They can be installed later when required
+3. In First Admin User screen, provide an admin user name and password and click on Save and Continue. ***Do not simply continue as admin***
+4. Once the dashboard screen opens, log out and log in again
+5. Jenkins is now fully functional
