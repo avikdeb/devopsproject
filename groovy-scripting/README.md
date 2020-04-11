@@ -38,7 +38,11 @@ Use the following commands:
 
 <br>
 
-## 4. Setting up of a modern Text Editor - Atom ***[optional]***
+## 4. To Run the code - GroovyConsole
+Out-of-the-box IDE is bundled with your groovy installation. This is GroovyConsole and can be found in $Groovy-installation-home/bin. Just type: groovyconsole in command prompt and it will open. You can run your code from there.
+<br>
+
+## 5. Setting up of a modern Text Editor - Atom ***[optional]***
 Atom is a very good text editor capable of intelligent code completion and lot of other developer friendly tasks. 
 We will use this to develop our Groovy codes and also generate DSL scripts.
 <br>
