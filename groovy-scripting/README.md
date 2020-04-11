@@ -47,6 +47,8 @@ Download Link: https://atom.io/
 1. Go to File > settings > Packages > Install language-groovy package and restart Atom
 2. Start writing your codes - save files with .groovy extension
 3. To integrate your code with GitHub, generate a token in GitHub and use it in Atom to connect to GitHub directly from Atom
+4. **To generate Personal Tokens in GitHub**: Login to GitHub > Click on your profile icon in Topmost left corner > Settings > Developers Settings at the left menu bottom part > Personal Access Tokenks > Click **Generate New Token** button > Provide a note / reason (such as, Used in Atom IDE grrovy scripting) > Check boxes - repo, write:packages, read:packages, delete:packages > Click **Generate Token** button at the bottom
+5. Copy the Token thus generated and use it in ATOM. Keep this safe in some file as this will not be shown again
 
 <br>
 
