@@ -46,6 +46,7 @@ Download Link: https://atom.io/
 <br>
 1. Go to File > settings > Packages > Install language-groovy package and restart Atom
 2. Start writing your codes - save files with .groovy extension
+3. To integrate your code with GitHub, generate a token in GitHub and use it in Atom to connect to GitHub directly from Atom
 
 <br>
 
