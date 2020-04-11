@@ -1,4 +1,4 @@
-# Groovy Installation Notes
+# Groovy Version 3.0.3 Installation Notes
 
 <br>
 
@@ -29,7 +29,7 @@ Use the following commands:
 
 ### 3. Install Groovy on Wndows
 1. Download and install JDK (Oracle JDK 8), if not present beforehand. set JAVA_HOME environment variable and add JAVA_HOME/bin to your PATH environment variable
-2. Download Groovy SDK - https://bintray.com/artifact/download/groovy/maven/apache-groovy-sdk-2.5.9.zip
+2. Download Groovy SDK - https://dl.bintray.com/groovy/maven/apache-groovy-binary-3.0.3.zip
 3. Extract in your local windows m/c (say, C:\groovy) - This is your install_home
 4. Set GROOVY_HOME environment variable to the install_home
 5. Add GROOVY_HOME/bin to your PATH environment variable
