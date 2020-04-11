@@ -39,7 +39,8 @@ Use the following commands:
 <br>
 
 ## 4. To Run the code - GroovyConsole
-Out-of-the-box IDE is bundled with your groovy installation. This is GroovyConsole and can be found in $Groovy-installation-home/bin. Just type: groovyconsole in command prompt and it will open. You can run your code from there.
+An out-of-the-box IDE is bundled with your groovy installation. This is GroovyConsole and can be found in $Groovy-installation-home/bin. Just type: groovyconsole in command prompt and it will open. You can run your code from there.
+
 <br>
 
 ## 5. Setting up of a modern Text Editor - Atom ***[optional]***
