@@ -19,7 +19,24 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
 <br>
 
 ## TO DO: Execute a build through running groovy script in Jenkins' script console
-1. To be documented
+1. Craete a build definition **TEST-01**
+2. Open **Manage Jenkins > Script Console**
+3. Study and use the below script:
+   //Executing instance of Jenkins
+   def server = Jenkins.instance
+   // Getting the Job named TEST-01 from the server instance
+   def job = server.getJob("TEST-01")
+   // Scheduling the Job - 0 means run immediately
+   def scheduled = job.scheduleBuild2(0)
+   // Get the future instance fo the scheduled job
+   scheduled.get()
+4. Click **Run**
+5. Result should show that build is successful
+6. Check in the dashboard - The job should be run and status reported
+7. Now create a second build definition, **TEST-02**
+8. Add a Groovy step and paste the above script which we have just now tested (point no.3). Use **Groovy Version** as **Default** and **Groovy command** option
+9. Run the **TEST-02** job. This has the call to run TEST-01 in the script
+10. we should be able to see second run for TEST-01 in dashboard - This one is called from our script
 <br>
 
 ## Execute a simple groovy script inside Jenkins (with groovy plugin)
