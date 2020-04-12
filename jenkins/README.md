@@ -40,7 +40,8 @@ Use the following commands:
 7. Append to PATH variable as before: PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/lib:$M2_HOME/bin
 8. Run: source ~/.bash_profile
 9. Check with: mvn -version
-
+<br>
+***Note:*** For Windows, download the binary zip and extract on some suitable location (e.g. C: or D:). Copy the installation home path (where you have bin directory housed) and define an environment variable M2_HOME. Append in Path environment variable %M2_HOME%\bin. Save the changes. Now open a new command prompt and check by echo %M2_HOME% followed by mvn -version. They should yield correct results
 <br>
 
 ## 5. Install Jenkins
