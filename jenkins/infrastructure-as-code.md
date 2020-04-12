@@ -24,6 +24,7 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
 3. Study and use the below script:
 
 ```groovy
+   import jenkins.model.Jenkins
    //Executing instance of Jenkins
    def server = Jenkins.instance
    // Getting the Job named TEST-01 from the server instance
@@ -38,7 +39,7 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
 5. Result should show that build is successful
 6. Check in the dashboard - The job should be run and status reported
 7. Now create a second build definition, **TEST-02**
-8. Add a Groovy step and paste the above script which we have just now tested (point no.3). Use **Groovy Version** as **Default** and **Groovy command** option
+8. Add a Groovy step and paste the above script which we have just now tested (point no.3). Use **Execute System Groovy script** as otherwise Jenkins class won't be found. **Be careful** you select the sorrect option
 9. Run the **TEST-02** job. This has the call to run TEST-01 in the script
 10. we should be able to see second run for TEST-01 in dashboard - This one is called from our script
 <br>
