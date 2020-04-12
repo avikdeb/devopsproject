@@ -6,7 +6,7 @@
 1. Refer C01-AWS-Lab-setup.pdf file kept in devopsproject repository and in Classroom shared drive
 2. Install wget utility: sudo yum install wget, in case not found
 
-### 2. Install Open JDK 8 and configure JAVA_HOME environment variable
+### 2. Install Open JDK 8 and configure JAVA_HOME environment variable on Linux
 Use the following commands:
 1. sudo yum update
 2. sudo yum install java-1.8*
@@ -21,7 +21,13 @@ Use the following commands:
 5. Append this to your PATh variable as: PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/lib
 6. Save the .bash_profile file with vi command in Esc mode: :wq!
 7. To take immediate effect: source ~/.bash_profile
-8. Run: echo $JAVA_HOME followed by java -version and javac -version - They should yird correct results
+8. Run: echo $JAVA_HOME followed by java -version and javac -version - They should yield correct results
+
+### 3. Install Oracle JDK 8 and configure JAVA_HOME environment variable on Windows
+1. Download the Oracle JDK 8 msi from Oracle site
+2. Run the installer - keep the default options as-is
+3. Once installed, define JAVA_HOME as environment variable and add %JAVA_HOME%\bin;%JAVA_HOME%\lib in the Path variable. Save the settings
+4. Open a new command prompt and check by echo %JAVA_HOME% followed by java -version and javac -version respectively. They should yield correct results
   
 ### 4. Install Apache Maven and configure M2_HOME environment variable
 Use the following commands:
@@ -37,7 +43,7 @@ Use the following commands:
 
 <br>
 
-## Install Jenkins
+## 5. Install Jenkins
 Follow the below steps once prerequisites are met.
 1. Run: sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 2. Run: sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
@@ -48,7 +54,7 @@ Follow the below steps once prerequisites are met.
 
 <br>
 
-## Post-Install Tasks
+## 6. Post-Install Tasks
 1. Once installation completes, Jenkins will prompt for one-time admin password to unlock product. Copy the path given in the
 wizard and just paste in to your browser, right after the Jenkins URL. Alternatively, remote login to the box and run: sudo cat /path-to-key/
 2. Proceed as usual and install suggested plug-ins. Few plug-ins may fail, don't worry - just continue as-is. They can be installed later when required
