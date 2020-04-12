@@ -55,6 +55,7 @@ Download Link: https://atom.io/
 4. **To generate Personal Tokens in GitHub**: Login to GitHub > Click on your profile icon in Topmost left corner > Settings > Developers Settings at the left menu bottom part > Personal Access Tokenks > Click **Generate New Token** button > Provide a note / reason (such as, Used in Atom IDE grrovy scripting) > Check boxes - repo, write:packages, read:packages, delete:packages > Click **Generate Token** button at the bottom
 5. Copy the Token thus generated and use it in ATOM. Keep this safe in some file as this will not be shown again
 6. You can now do push/pull etc. as usual from ATOM directly
+7. To run groovy code directly in Atom - install the Script package from site - https://atom.io/packages/script
 
 <br>
 
