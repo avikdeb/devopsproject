@@ -22,6 +22,7 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
 1. Craete a build definition **TEST-01**
 2. Open **Manage Jenkins > Script Console**
 3. Study and use the below script:
+'''
    //Executing instance of Jenkins
    def server = Jenkins.instance
    // Getting the Job named TEST-01 from the server instance
@@ -30,6 +31,7 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
    def scheduled = job.scheduleBuild2(0)
    // Get the future instance fo the scheduled job
    scheduled.get()
+'''   
 4. Click **Run**
 5. Result should show that build is successful
 6. Check in the dashboard - The job should be run and status reported
