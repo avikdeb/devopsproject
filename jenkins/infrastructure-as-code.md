@@ -21,5 +21,5 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
 2. Go to Build step
 3. There are two options available - we will see their usage and use case at this point:
 * Execute Groovy Script - They are recommended for usual purpose. These are executed outside the JVM which Jenkins uses. This used in controlling / orchestrating builds.
-* Execute System Groovy Script - Needs elevated access. It can do few more things which a standard script cannot, due to elevated access. This uses the same VM that Jenkins uses. clearly, if anything that needs Jenkins own resources etc. we will go for this option. ** Jenkins admin** is allowed to run such scripts.
+* Execute System Groovy Script - Needs elevated access. It can do few more things which a standard script cannot, due to elevated access. This uses the same VM that Jenkins uses. clearly, if anything that needs Jenkins own resources etc. we will go for this option. **Jenkins admin** is allowed to run such scripts.
 4. To be documented
