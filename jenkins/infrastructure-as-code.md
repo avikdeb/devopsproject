@@ -38,16 +38,23 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
 4. Click **Run**
 5. Result should show that build is successful
 6. Check in the dashboard - The job should be run and status reported
-7. Now create a second build definition, **TEST-02**
-8. Add a Groovy step and paste the above script which we have just now tested (point no.3). Use **Execute System Groovy script** as otherwise Jenkins class won't be found. **Be careful** you select the sorrect option
-9. Run the **TEST-02** job. This has the call to run TEST-01 in the script
-10. we should be able to see second run for TEST-01 in dashboard - This one is called from our script
 <br>
 
-## Execute a simple groovy script inside Jenkins (with groovy plugin)
+## Execute a simple groovy script inside Jenkins (with groovy plugin) - System Groovy Script Run
 1. Now create a Freestyle project for the first time
 2. Go to Build step
 3. There are two options available - we will see their usage and use case at this point:
-* Execute Groovy Script - They are recommended for usual purpose. These are executed outside the JVM which Jenkins uses. This used in controlling / orchestrating builds.
-* Execute System Groovy Script - Needs elevated access. It can do few more things which a standard script cannot, due to elevated access. This uses the same VM that Jenkins uses. clearly, if anything that needs Jenkins own resources etc. we will go for this option. They have all the required jenkins libraries imported (e.g. import jenkins.* etc.). **Jenkins admin** is allowed to run such scripts.
-4. To be documented
+* **Execute Groovy Script** - They are recommended for usual purpose. These are executed outside the JVM which Jenkins uses. This used in controlling / orchestrating builds. we will use this in next section. For the moment we will do **System Groovy Script**
+* **Execute System Groovy Script** - Needs elevated access. It can do few more things which a standard script cannot, due to elevated access. This uses the same VM that Jenkins uses. clearly, if anything that needs Jenkins own resources etc. we will go for this option. They have all the required jenkins libraries imported (e.g. import jenkins.* etc.). **Jenkins admin** is allowed to run such scripts.
+4. You have already created a build definition or Job as **TEST-01**
+5. Now create a second build definition, **TEST-02**
+6. Add a Groovy step and paste the above script which we have just now tested (point no.3). Use **Execute System Groovy script** as otherwise Jenkins class won't be found. **Be careful** you select the sorrect option
+7. Run the **TEST-02** job. This has the call to run TEST-01 in the script
+8. we should be able to see second run for TEST-01 in dashboard - This one is called from our script
+9. Now we are running a pipeline written as a script - This is doing **Infrastructure-as-code**
+
+<br>
+
+## Execute a simple groovy script without System Run
+1. This is the preferred way in most of the cases as we do not need the Jenkin's own groovy environment to execute. This is very general one.
+2. 
