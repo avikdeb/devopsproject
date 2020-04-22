@@ -74,7 +74,7 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
    // Get the future instance fo the scheduled job
    scheduled.get()
 ```
-15. In your build definition of **TEST-02** > Go to the **General** tab > Check **This project is parameterized** box > Click on **Add parameter** > Add a **String parameter** from the drop-down list and call it **test**
+15. In your build definition of **TEST-02** > Go to the **General** tab > Check **This project is parameterized** box > Click on **Add parameter** > Add a **String parameter** from the drop-down list and call it **target**
 16. Go to the **Build** section at the bottom > Remove the **Variable bindings** > Make the change in your script as follows:
 
 ```groovy
