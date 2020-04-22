@@ -57,7 +57,7 @@ Jenkins understands groovy. Many routine jenkins jobs including builds can be wr
 10. we should be able to see second run for TEST-01 in dashboard - This one is called from our script
 11. However, the code is still in build definition and is not versioned. We need to take care of that too later. For the moment, let us modify our script as Groovy Command and do some important stuffs
 12. Now click on **Advanced** > Opens the **Variable bindings** section - we can define our variables here
-13. Write: target = Test-01 We will use this variable in the script, making it general and no hardcoded job name - This is the call for TEST-01 from TEST-02
+13. Write: target = TEST-01 We will use this variable in the script, making it general and no hardcoded job name - This is the call for TEST-01 from TEST-02
 14. In the script do the following:
 
 ```groovy
